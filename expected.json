@@ -1,0 +1,431 @@
+[
+ {
+  "fn": "buyTruth",
+  "args": [
+   "12",
+   "8"
+  ],
+  "expected": "Needing 12 in packs of 8 takes 2 packs, which is 16 in all with 4 left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "16",
+   "8"
+  ],
+  "expected": "Needing 16 in packs of 8 takes 2 packs, which is 16 in all with none left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "1",
+   "1"
+  ],
+  "expected": "Needing 1 in packs of 1 takes 1 pack, which is 1 in all with none left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "1",
+   "10"
+  ],
+  "expected": "Needing 1 in packs of 10 takes 1 pack, which is 10 in all with 9 left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "10",
+   "1"
+  ],
+  "expected": "Needing 10 in packs of 1 takes 10 packs, which is 10 in all with none left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "2000",
+   "7"
+  ],
+  "expected": "Needing 2000 in packs of 7 takes 286 packs, which is 2002 in all with 2 left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "2001",
+   "7"
+  ],
+  "expected": "Needing 2001 in packs of 7 takes 286 packs, which is 2002 in all with 1 left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "1000000",
+   "1000000"
+  ],
+  "expected": "Needing 1000000 in packs of 1000000 takes 1 pack, which is 1000000 in all with none left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "1000000",
+   "999999"
+  ],
+  "expected": "Needing 1000000 in packs of 999999 takes 2 packs, which is 1999998 in all with 999998 left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "1000000",
+   "1"
+  ],
+  "expected": "Needing 1000000 in packs of 1 takes 1000000 packs, which is 1000000 in all with none left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "25",
+   "12"
+  ],
+  "expected": "Needing 25 in packs of 12 takes 3 packs, which is 36 in all with 11 left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   " 9 ",
+   " 4 "
+  ],
+  "expected": "Needing 9 in packs of 4 takes 3 packs, which is 12 in all with 3 left over."
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "0",
+   "5"
+  ],
+  "expected": "ERR:need must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "5",
+   "0"
+  ],
+  "expected": "ERR:pack size must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "-5",
+   "2"
+  ],
+  "expected": "ERR:need must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "abc",
+   "2"
+  ],
+  "expected": "ERR:need must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "1000001",
+   "2"
+  ],
+  "expected": "ERR:need must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "5",
+   "1.5"
+  ],
+  "expected": "ERR:pack size must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "buyTruth",
+  "args": [
+   "",
+   "2"
+  ],
+  "expected": "ERR:need must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "14",
+   "4"
+  ],
+  "expected": "14 split among 4 groups gives 3 each with 2 left over. Adding 2 (16 in all) gives 4 each; taking away 2 (12 in all) gives 3 each."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "12",
+   "4"
+  ],
+  "expected": "12 split among 4 groups gives 3 each, with none left over."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "5",
+   "8"
+  ],
+  "expected": "5 split among 8 groups gives 0 each with 5 left over. Adding 3 (8 in all) gives 1 each."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "1",
+   "2"
+  ],
+  "expected": "1 split among 2 groups gives 0 each with 1 left over. Adding 1 (2 in all) gives 1 each."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "7",
+   "2"
+  ],
+  "expected": "7 split among 2 groups gives 3 each with 1 left over. Adding 1 (8 in all) gives 4 each; taking away 1 (6 in all) gives 3 each."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "100",
+   "7"
+  ],
+  "expected": "100 split among 7 groups gives 14 each with 2 left over. Adding 5 (105 in all) gives 15 each; taking away 2 (98 in all) gives 14 each."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "1000000",
+   "1000000"
+  ],
+  "expected": "1000000 split among 1000000 groups gives 1 each, with none left over."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "999999",
+   "1000000"
+  ],
+  "expected": "999999 split among 1000000 groups gives 0 each with 999999 left over. Adding 1 (1000000 in all) gives 1 each."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "30",
+   "30"
+  ],
+  "expected": "30 split among 30 groups gives 1 each, with none left over."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "31",
+   "30"
+  ],
+  "expected": "31 split among 30 groups gives 1 each with 1 left over. Adding 29 (60 in all) gives 2 each; taking away 1 (30 in all) gives 1 each."
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "10",
+   "1"
+  ],
+  "expected": "ERR:groups must be a whole number from 2 to 1000000"
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "10",
+   "0"
+  ],
+  "expected": "ERR:groups must be a whole number from 2 to 1000000"
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "x",
+   "3"
+  ],
+  "expected": "ERR:count must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "evenTruth",
+  "args": [
+   "10",
+   "1000001"
+  ],
+  "expected": "ERR:groups must be a whole number from 2 to 1000000"
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "24",
+   "6",
+   "4.50",
+   "10",
+   "7"
+  ],
+  "expected": "Needing 24: A (packs of 6 at 4.50) takes 4 packs for 18.00, with none left over; B (packs of 10 at 7.00) takes 3 packs for 21.00, with 6 left over. A costs 3.00 less."
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "24",
+   "6",
+   "4",
+   "12",
+   "8"
+  ],
+  "expected": "Needing 24: A (packs of 6 at 4.00) takes 4 packs for 16.00, with none left over; B (packs of 12 at 8.00) takes 2 packs for 16.00, with none left over. They cost the same."
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "12",
+   "8",
+   "3.99",
+   "12",
+   "3.99"
+  ],
+  "expected": "Needing 12: A (packs of 8 at 3.99) takes 2 packs for 7.98, with 4 left over; B (packs of 12 at 3.99) takes 1 pack for 3.99, with none left over. B costs 3.99 less."
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "12",
+   "8",
+   "3.99",
+   "6",
+   "2"
+  ],
+  "expected": "Needing 12: A (packs of 8 at 3.99) takes 2 packs for 7.98, with 4 left over; B (packs of 6 at 2.00) takes 2 packs for 4.00, with none left over. B costs 3.98 less."
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "1",
+   "1",
+   "0.01",
+   "100",
+   "100000"
+  ],
+  "expected": "Needing 1: A (packs of 1 at 0.01) takes 1 pack for 0.01, with none left over; B (packs of 100 at 100000.00) takes 1 pack for 100000.00, with 99 left over. A costs 99999.99 less."
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "1000000",
+   "1",
+   "1",
+   "1000000",
+   "100000"
+  ],
+  "expected": "Needing 1000000: A (packs of 1 at 1.00) takes 1000000 packs for 1000000.00, with none left over; B (packs of 1000000 at 100000.00) takes 1 pack for 100000.00, with none left over. B costs 900000.00 less."
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "30",
+   "10",
+   "5",
+   "15",
+   "2.50"
+  ],
+  "expected": "Needing 30: A (packs of 10 at 5.00) takes 3 packs for 15.00, with none left over; B (packs of 15 at 2.50) takes 2 packs for 5.00, with none left over. B costs 10.00 less."
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "50",
+   "12",
+   "9.99",
+   "8",
+   "6.50"
+  ],
+  "expected": "Needing 50: A (packs of 12 at 9.99) takes 5 packs for 49.95, with 10 left over; B (packs of 8 at 6.50) takes 7 packs for 45.50, with 6 left over. B costs 4.45 less."
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "8",
+   "3",
+   "1.10",
+   "4",
+   "1.50"
+  ],
+  "expected": "Needing 8: A (packs of 3 at 1.10) takes 3 packs for 3.30, with 1 left over; B (packs of 4 at 1.50) takes 2 packs for 3.00, with none left over. B costs 0.30 less."
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "24",
+   "6",
+   "0",
+   "10",
+   "7"
+  ],
+  "expected": "ERR:pack A price must be a positive number with at most 2 decimals, from 0.01 to 100000"
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "24",
+   "6",
+   "4.5",
+   "10",
+   "100000.01"
+  ],
+  "expected": "ERR:pack B price must be a positive number with at most 2 decimals, from 0.01 to 100000"
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "24",
+   "0",
+   "4.5",
+   "10",
+   "7"
+  ],
+  "expected": "ERR:pack A size must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "24",
+   "6",
+   "4.555",
+   "10",
+   "7"
+  ],
+  "expected": "ERR:pack A price must be a positive number with at most 2 decimals, from 0.01 to 100000"
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "abc",
+   "6",
+   "4.5",
+   "10",
+   "7"
+  ],
+  "expected": "ERR:need must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "compareTruth",
+  "args": [
+   "24",
+   "6",
+   "4.5",
+   "x",
+   "7"
+  ],
+  "expected": "ERR:pack B size must be a whole number from 1 to 1000000"
+ }
+]
