@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pack Math - whole-pack buying arithmetic</title>
+<style>
+  :root { --accent:#b3402e; --ink:#2d120c; --paper:#fcf3ef; --soft:#f6dfd6; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#955a4b; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pack Math</h1>
+  <p class="lede">Need 12 and they come in 8s? You buy 16 and 4 are left over.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Pack Math works out whole packs, even splits and pack costs from the counts and prices you type. It assumes the sizes and prices are what the store really charges. It does not know about sales, coupons, tax or what is actually in stock. Check those at the shelf or the checkout.
+  </div>
+  <section>
+    <h2>The buy truth</h2>
+    <p>Needing 12 in packs of 8 takes 2 packs, which is 16 in all with 4 left over.</p>
+  </section>
+  <section>
+    <h2>The even truth</h2>
+    <p>14 split among 4 groups gives 3 each with 2 left over. Adding 2 (16 in all) gives 4 each; taking away 2 (12 in all) gives 3 each.</p>
+  </section>
+  <section>
+    <h2>The compare truth</h2>
+    <p>Needing 24: A (packs of 6 at 4.50) takes 4 packs for 18.00, with none left over; B (packs of 10 at 7.00) takes 3 packs for 21.00, with 6 left over. A costs 3.00 less.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Pack Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
